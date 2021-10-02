@@ -1,3 +1,13 @@
 info:
   description: redisgeek configs
   url: https://github.com/redisgeek/demo-config
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: '*'
