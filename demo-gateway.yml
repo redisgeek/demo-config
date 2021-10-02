@@ -6,3 +6,7 @@ spring:
         uri: http://localhost/
         predicates:
         - Path=/session
+      - id: httpbin
+        uri: http://httpbin.org
+        predicates:
+          - Path=/get
