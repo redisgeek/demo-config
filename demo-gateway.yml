@@ -6,6 +6,8 @@ spring:
         uri: http://localhost/
         predicates:
         - Path=/session
+        filters:
+        - RewritePath=/session/(?<segment>.*),/session/$\{segment}
       - id: httpbin
         uri: http://httpbin.org
         predicates:
