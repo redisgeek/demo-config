@@ -3,7 +3,7 @@ spring:
     gateway:
       routes:
       - id: session
-        uri: http://localhost/
+        uri: https://redisgeek.dashaun.dev/
         predicates:
         - Path=/session/**
         filters:
