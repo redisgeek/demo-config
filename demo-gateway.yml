@@ -2,7 +2,7 @@ spring:
   cloud:
     gateway:
       routes:
-      - id: revealjs
+      - id: session
         uri: http://localhost/
         predicates:
         - Path=/session
